@@ -1,0 +1,4 @@
+https://github.com/Matt-Hurd/42-libft
+https://github.com/iaurg/42-libft
+https://github.com/appinha/42cursus-00-Libft
+https://github.com/Glagan/42-libft
