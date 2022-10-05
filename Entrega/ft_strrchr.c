@@ -1,29 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: djustino <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: djustino <djustino@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/28 19:43:14 by djustino          #+#    #+#             */
-/*   Updated: 2022/09/28 19:43:16 by djustino         ###   ########.fr       */
+/*   Created: 2022/09/28 19:43:03 by djustino          #+#    #+#             */
+/*   Updated: 2022/10/01 21:16:42 by djustino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *input, int searched)
+char	*ft_strnstr(const char *origin, const char *searched, size_t limit)
 {
-	int	loop;
+	size_t		loop;
+	size_t		point;
 
-	loop = ft_strlen(input);
-	if (input[loop] == '\0' && searched == '\0')
-		return ((char *)input + loop);
-	while (loop >= 0)
+	loop = 0;
+	point = 0;
+	if (searched[0] == '\0')
+		return ((char *)origin);
+	while (origin[loop] != '\0' && point < limit)
 	{
-		if (input[loop] == (unsigned char)searched)
-			return ((char *)input + loop);
-		loop--;
+		point = 0;
+		while (origin[loop + point] == searched[point]
+			&& origin[loop + point] != '\0'
+			&& loop + point < limit)
+		{
+			if (searched[point + 1] == '\0')
+				return (&((char *)origin)[loop]);
+			point++;
+		}
+		loop++;
 	}
 	return (NULL);
 }
+// This function find the first occurency of a char int a array
