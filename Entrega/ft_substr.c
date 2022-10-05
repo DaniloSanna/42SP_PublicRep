@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: djustino <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: djustino <djustino@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 19:43:36 by djustino          #+#    #+#             */
-/*   Updated: 2022/09/28 19:43:37 by djustino         ###   ########.fr       */
+/*   Updated: 2022/10/01 21:18:21 by djustino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,3 +37,4 @@ char	*ft_substr(char const *input, unsigned int start, size_t distance)
 	}
 	return (NULL);
 }
+// This function create a substring of a array.
