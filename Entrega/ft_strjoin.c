@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: djustino <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: djustino <djustino@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 19:41:41 by djustino          #+#    #+#             */
-/*   Updated: 2022/09/28 19:41:42 by djustino         ###   ########.fr       */
+/*   Updated: 2022/10/01 21:09:36 by djustino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,4 @@ char	*ft_strjoin(char const *array1, char const *array2)
 	ft_strlcat(retur, array2, size);
 	return (retur);
 }
+// This function alocs and return a new string with the sum size of arrays
