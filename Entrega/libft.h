@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: djustino <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: djustino <djustino@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/01 06:10:06 by djustino          #+#    #+#             */
-/*   Updated: 2022/10/01 06:10:08 by djustino         ###   ########.fr       */
+/*   Updated: 2022/10/01 21:19:17 by djustino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ int		ft_isalpha(int input);
 int		ft_isascii(int input);
 int		ft_isdigit(int input);
 int		ft_isprint(int input);
-int		ft_memcmp(const void *s1, const void *s2, size_t limit);
-int		ft_strncmp(const char *s1, const char *s2, size_t limit);
+int		ft_memcmp(const void *array1, const void *array2, size_t limit);
+int		ft_strncmp(const char *array1, const char *array2, size_t limit);
 int		ft_tolower(int input);
 int		ft_toupper(int input);
 
