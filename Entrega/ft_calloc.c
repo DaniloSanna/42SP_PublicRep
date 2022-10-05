@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: djustino <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: djustino <djustino@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 19:33:53 by djustino          #+#    #+#             */
-/*   Updated: 2022/09/28 19:33:54 by djustino         ###   ########.fr       */
+/*   Updated: 2022/10/01 21:04:31 by djustino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,4 @@ void	*ft_calloc(size_t mensizeone, size_t mensizetwo)
 	ft_bzero(newarray, (size_t)(mensizetwo) * (size_t)(mensizeone));
 	return (newarray);
 }
+// this function calculate and alocate memory to a new string.
