@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: djustino <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: djustino <djustino@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 19:38:45 by djustino          #+#    #+#             */
-/*   Updated: 2022/09/28 19:38:47 by djustino         ###   ########.fr       */
+/*   Updated: 2022/10/01 21:15:32 by djustino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memchr(const void *input, int searched, size_t limit)
 {
-	int				i;
+	int	i;
 
 	i = 0;
 	while (limit)
@@ -26,3 +26,5 @@ void	*ft_memchr(const void *input, int searched, size_t limit)
 	}
 	return (NULL);
 }
+// This Function check n elements from input, looking for searched, once finded
+// return this position
