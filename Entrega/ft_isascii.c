@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: djustino <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/28 19:49:55 by djustino          #+#    #+#             */
-/*   Updated: 2022/09/28 19:49:58 by djustino         ###   ########.fr       */
+/*   Created: 2022/09/28 19:36:50 by djustino          #+#    #+#             */
+/*   Updated: 2022/09/28 19:36:51 by djustino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isascii(int input)
+int	ft_isalpha(int input)
 {
-	if (input >= 0 && input <= 127)
+	if ((input >= 'A' && input <= 'Z') || (input >= 'a' && input <= 'z'))
 		return (1);
 	return (0);
 }
