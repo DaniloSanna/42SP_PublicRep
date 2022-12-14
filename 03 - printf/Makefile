@@ -1,4 +1,4 @@
-SRCS	= convert_int_to_hex.c ft_printf.c print_char_string.c print_n.c print_pointer.c
+SRCS	= convert_int_to_hex.c ft_printf.c print_char_string.c print_number.c print_pointer.c
 
 HEADERS	= ./ft_printf.h
 
